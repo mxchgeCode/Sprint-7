@@ -11,7 +11,8 @@ class TestCourierLogin:
         courier_methods = CourierMethods()
         login_pass, _ = create_courier
         r = courier_methods.post_login_courier(login_pass)
-        assert r.status_code == 200 and r.json()['id'] == courier_methods.get_courier_id(login_pass)
+        assert r.status_code == 200
+        assert r.json()['id'] == courier_methods.get_courier_id(login_pass)
 
     @allure.title('Проверка получения ошибки аутентификации курьера при вводе несуществующей пары логина и пароля')
     @allure.description('Передаем данные без логина или пароля.')

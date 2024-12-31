@@ -96,5 +96,6 @@ class InvalidDataForRegistration:
         }
     ]
 
+
 class InvalidDataForLogin:
     payloads = [['xxxxx', 'zzzzz'], ['vvvvvv', 'bbbbbbb']]
