@@ -6,8 +6,7 @@ import allure
 class CourierMethods:
     @allure.step("Cоздать курьера")
     def post_create_courier(self, payload):
-        r = requests.post(f'{URLs.BASE_URL}{URLs.COURIER_CREATE_URL}', data=payload)
-        return r
+        return requests.post(f'{URLs.BASE_URL}{URLs.COURIER_CREATE_URL}', data=payload)
 
     @allure.step("Попытка создать курьера со старым login_pass")
     def post_create_courier_with_old_login_pass(self, login_pass):
@@ -16,8 +15,7 @@ class CourierMethods:
             'password': login_pass[1],
             'first_name': login_pass[2],
         }
-        response = requests.post(f'{URLs.BASE_URL}{URLs.COURIER_CREATE_URL}', data=payload)
-        return response
+        return requests.post(f'{URLs.BASE_URL}{URLs.COURIER_CREATE_URL}', data=payload)
 
     @allure.step("Вход с учетными данными login_pass")
     def post_login_courier(self, login_pass):
@@ -34,8 +32,7 @@ class CourierMethods:
             'login': login_pass[0],
             'password': ''
         }
-        response = requests.post(f'{URLs.BASE_URL}{URLs.COURIER_LOGIN_URL}', data=payload)
-        return response
+        return requests.post(f'{URLs.BASE_URL}{URLs.COURIER_LOGIN_URL}', data=payload)
 
     @allure.step("Вход с учетными данными login_pass с пустым логином")
     def post_login_courier_without_login(self, login_pass):
@@ -43,8 +40,7 @@ class CourierMethods:
             'login': '',
             'password': login_pass[1]
         }
-        response = requests.post(f'{URLs.BASE_URL}{URLs.COURIER_LOGIN_URL}', data=payload)
-        return response
+        return requests.post(f'{URLs.BASE_URL}{URLs.COURIER_LOGIN_URL}', data=payload)
 
     @allure.step("Получить id курьера")
     def get_courier_id(self, login_pass):

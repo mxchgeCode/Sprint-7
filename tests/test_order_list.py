@@ -9,4 +9,5 @@ class TestOrdersList:
     def test_get_order_by_track_fast(self):
         order_methods = OrderMethods()
         r = order_methods.get_list_of_orders()
-        assert r.status_code == 200 and len(r.json()["orders"]) > 0
+        assert r.status_code == 200
+        assert len(r.json()["orders"]) > 0

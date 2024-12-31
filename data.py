@@ -62,24 +62,24 @@ class OrderData:
 
 
 class Errors:
-    error_login_400_no_login_or_pass = "Недостаточно данных для входа"
-    error_login_404_no_such_user = "Учетная запись не найдена"
+    ERROR_LOGIN_400_NO_LOGIN_OR_PASS = "Недостаточно данных для входа"
+    ERROR_LOGIN_404_NO_SUCH_USER = "Учетная запись не найдена"
 
-    error_create_400_no_data = "Недостаточно данных для создания учетной записи"
-    error_create_409_already_exist = "Этот логин уже используется"
+    ERROR_CREATE_400_NO_DATA = "Недостаточно данных для создания учетной записи"
+    ERROR_CREATE_409_ALREADY_EXIST = "Этот логин уже используется"
 
-    error_delete_400_no_data = "Недостаточно данных для удаления курьера"
-    error_delete_404_no_such_id = "Курьера с таким id нет."
+    ERROR_DELETE_400_NO_DATA = "Недостаточно данных для удаления курьера"
+    ERROR_DELETE_404_NO_SUCH_ID = "Курьера с таким id нет."
 
-    error_count_orders_no_data = "Недостаточно данных для поиска"
-    error_count_orders_no_such_user = "Курьер не найден"
+    ERROR_COUNT_ORDERS_NO_DATA = "Недостаточно данных для поиска"
+    ERROR_COUNT_ORDERS_NO_SUCH_USER = "Курьер не найден"
 
-    error_track_order_no_data = "Недостаточно данных для поиска"
-    error_track_order_no_such_order = "Заказ не найден"
+    ERROR_TRACK_ORDER_NO_DATA = "Недостаточно данных для поиска"
+    ERROR_TRACK_ORDER_NO_SUCH_ORDER = "Заказ не найден"
 
-    error_accept_order_no_order_number = "Недостаточно данных для поиска"
-    error_accept_order_no_such_courier = "Курьера с таким id не существует"
-    error_accept_order_no_data = "Недостаточно данных для поиска"
+    ERROR_ACCEPT_ORDER_NO_ORDER_NUMBER = "Недостаточно данных для поиска"
+    ERROR_ACCEPT_ORDER_NO_SUCH_COURIER = "Курьера с таким id не существует"
+    ERROR_ACCEPT_ORDER_NO_DATA = "Недостаточно данных для поиска"
 
 
 class InvalidDataForRegistration:

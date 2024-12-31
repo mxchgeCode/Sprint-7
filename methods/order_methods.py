@@ -16,5 +16,3 @@ class OrderMethods:
     def get_list_of_orders(self):
         station = 'nearestStation=["1", "2"]'
         return requests.get(f'{URLs.BASE_URL}{URLs.CREATE_ORDERS_URL}?{station}')
-
-
